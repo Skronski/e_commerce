@@ -38,7 +38,7 @@ def directories_path_setup(_project_name, _root):
 
 
 def update_gitignore(directories, _project_name, _root):
-    with open(str(_root + ".gitignore"), "a") as f:
+    with open(str(_root + "/" + _project_name + "/" + ".gitignore"), "a") as f:
         f.write(
             str("\n#" + _project_name + "\n")
             + f'\n{directories["01_input"]}\n{directories["02_output"]}\n{directories["03_temporary"]}'
