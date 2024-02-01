@@ -13,6 +13,8 @@ def directories_path_setup(_project_name, _root):
     input:
         - _project_name (string): (snake_case_convection)
         - _root (string): path where to put the project input output etc.
+
+
     returns:
         - directories (dictionary: {string: string}): name of folder and path
     """
@@ -33,3 +35,13 @@ def directories_path_setup(_project_name, _root):
             os.makedirs(directory)
 
     return directories
+
+
+def update_gitignore(directories, _project_name, _root):
+    with open(str(_root + ".gitignore"), "a") as f:
+        f.write(
+            str("\n#" + _project_name + "\n")
+            + f'\n{directories["01_input"]}\n{directories["02_output"]}\n{directories["03_temporary"]}'
+        )
+        f.close()
+    print(" .gitignore updated with input output ")
