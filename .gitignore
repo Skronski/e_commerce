@@ -1,10 +1,10 @@
 01_input/
 02_output/
 03_temporary/.DS_Store
-
+03_temporary/
 
 #e_commerce
 
-/Users/skronski/Documents/Projects/e_commerce/01_input
-/Users/skronski/Documents/Projects/e_commerce/02_output
-/Users/skronski/Documents/Projects/e_commerce/03_temporary
+/Users/skronski/Documents/Projects/e_commerce/01_input/
+/Users/skronski/Documents/Projects/e_commerce/02_output/
+/Users/skronski/Documents/Projects/e_commerce/03_temporary/
